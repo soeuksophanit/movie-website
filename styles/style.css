@@ -80,3 +80,18 @@
     /* Initial scale */
   }
 }
+
+.my-logo-text::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 50%;
+  background: #fbbf24;
+  left: 0;
+  bottom: -3px;
+  border-radius: 10px;
+}
+
+.my-logo-text:hover::after {
+  width: 100%;
+}

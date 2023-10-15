@@ -82,9 +82,9 @@ newDiv.innerHTML = `
             </a>
             <a
               href=${movie_detail.video_src} target="_blank"
-              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-[#54B435] focus:ring-4 focus:ring-gray-100 text-white"
+              class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-[#38bdf8] focus:ring-4 focus:ring-gray-100 text-white"
             >
-              On iQIYI
+              Trailer
             </a>
           </div>
           <div class="hidden lg:mt-0 lg:col-span-5 lg:flex my-card-detail">

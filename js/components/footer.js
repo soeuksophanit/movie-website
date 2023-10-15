@@ -5,16 +5,17 @@ footer.innerHTML = `
 <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
-              <img src="./logo.svg" class="h-8 mr-3" alt="Iqiyi Logo" />
-            </a>
+            <a href="./index.html" class="flex items-center">
+            <!-- <img src="./logo.svg" class="h-8 mr-3" alt="Iqiyi Logo" /> -->
+            <span class="font-bold text-2xl">THE <span class="text-[#fbbf24] after:duration-200 my-logo-text relative">MOVIES</span></span>
+          </a>
           </div>
           <div class="grid grid-cols-4 gap-8 sm:gap-6 max-sm:grid-cols-3">
             <div>
               <h2
                 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white text-white"
               >
-                About IQIYI
+                About Us
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
@@ -41,21 +42,21 @@ footer.innerHTML = `
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://www.iq.com/intl-common/partnerShip.html"
+                    href="#"
                     class="hover:underline"
                     >Advertise</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.iq.com/intl-common/partnerShip.html"
+                    href="#"
                     class="hover:underline"
                     >Corporate relations</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.iq.com/intl-common/partnerShip.html"
+                    href="#"
                     class="hover:underline"
                     >Preinstall Cooperation</a
                   >
@@ -71,14 +72,14 @@ footer.innerHTML = `
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://www.iq.com/intl-common/international-privacyagreement.html?lang=en_us"
+                    href="#"
                     class="hover:underline"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
-                    href="https://www.iq.com/intl-common/international-useragreement.html?lang=en_us"
+                    href="#"
                     class="hover:underline"
                     >Terms &amp; Conditions</a
                   >
@@ -113,15 +114,15 @@ footer.innerHTML = `
         <div class="sm:flex sm:items-center sm:justify-between">
           <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
             © 2023
-            <a href="https://www.iq.com/?lang=en_us" class="hover:underline"
-              >IQIYI</a
+            <a href="#" class="hover:underline"
+              >The Movies</a
             >. All Rights Reserved.
             <br />
             We use cookies to improve your experience on this site. By
             continuing to use our website. You agree to use of cookies. Learn
             more
-            <a href="https://www.iq.com/?lang=en_us" class="hover:underline"
-              >IQIYI privacy policy.</a
+            <a href="#" class="hover:underline"
+              >The Movies privacy policy.</a
             ></span
           >
           <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
