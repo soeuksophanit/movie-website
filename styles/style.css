@@ -1,0 +1,47 @@
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.3) 123.2px,
+      rgb(17, 19, 25) 560px,
+      rgb(17, 19, 25) 100%
+    ),
+    url(https://www.iqiyipic.com/common/fix/global/about/bg1024.png);
+}
+
+.my-drop-down {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  height: 0;
+  z-index: 999;
+}
+
+.my-drop-down.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+  transition: all 0.5s ease-in-out;
+  height: auto;
+  max-height: 400px;
+}
+
+.my-card-click img {
+  position: relative;
+}
+
+.my-card-click .overlay::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.9)
+  );
+}
