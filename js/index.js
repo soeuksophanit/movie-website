@@ -40,8 +40,8 @@ for (let each_category of all_categories) {
     <div
             class="my-card-click duration-300 hover:scale-[1.1] w-full max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <a class="relative overlay" href="detail.html?id=${each_movie.id}">
-              <div>
+            <a class="relative " href="detail.html?id=${each_movie.id}">
+              <div class="overlay">
               <img
                 class="p-0 rounded-t-lg"
                 src=${each_movie.src}
