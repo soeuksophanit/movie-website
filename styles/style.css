@@ -6,6 +6,9 @@
       rgb(17, 19, 25) 100%
     ),
     url(https://www.iqiyipic.com/common/fix/global/about/bg1024.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .my-drop-down {

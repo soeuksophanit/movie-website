@@ -19,7 +19,7 @@ const result = [
 console.log(result);
 
 let params = new URLSearchParams(document.location.search);
-let id = params.get("id"); // is the string "Jonathan"
+let id = params.get("id");
 console.log("get id : ", id);
 
 const movie_detail = result.find((mv) => mv.id === parseInt(id));
@@ -27,6 +27,14 @@ const movie_detail = result.find((mv) => mv.id === parseInt(id));
 console.log(movie_detail);
 
 const detail_wrapper = document.querySelector(".hero");
+const hero = document.getElementById("hero");
+if (movie_detail.src)
+  hero.style.backgroundImage = `linear-gradient(
+        rgba(0, 0, 0, 0.3) 123.2px,
+        rgb(17, 19, 25) 560px,
+        rgb(17, 19, 25) 100%
+      ) ,url("${movie_detail.src}")`;
+
 const newDiv = document.createElement("div");
 newDiv.classList.add(
   "my-detail",
@@ -50,7 +58,7 @@ newDiv.innerHTML = `
               ${movie_detail.title}
             </h1>
             <p
-              class="animate-rotate text max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+              class="animate-rotate text max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-300"
             >
               ${movie_detail.des}
             </p>
@@ -73,7 +81,7 @@ newDiv.innerHTML = `
               </svg>
             </a>
             <a
-              href="https://www.iq.com/album/love-between-fairy-and-devil-2022-ld8e5pprpl?lang=en_us"
+              href=${movie_detail.video_src} target="_blank"
               class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-[#54B435] focus:ring-4 focus:ring-gray-100 text-white"
             >
               On iQIYI
@@ -85,6 +93,7 @@ newDiv.innerHTML = `
               ? ` <iframe
               width="560"
               height="500"
+              class="rounded-sm"
               src=${movie_detail.video_src}
               title="YouTube video player"
               frameborder="0"
