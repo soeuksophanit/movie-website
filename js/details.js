@@ -45,12 +45,12 @@ newDiv.innerHTML = `
 
 <div class="mr-auto place-self-center lg:col-span-7">
             <h1
-              class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
+              class="animate-rotate max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-white"
             >
               ${movie_detail.title}
             </h1>
             <p
-              class="text max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+              class="animate-rotate text max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
             >
               ${movie_detail.des}
             </p>
@@ -79,8 +79,10 @@ newDiv.innerHTML = `
               On iQIYI
             </a>
           </div>
-          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <iframe
+          <div class="hidden lg:mt-0 lg:col-span-5 lg:flex my-card-detail">
+          ${
+            movie_detail.video_src
+              ? ` <iframe
               width="560"
               height="500"
               src=${movie_detail.video_src}
@@ -88,7 +90,10 @@ newDiv.innerHTML = `
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
-            ></iframe>
+            ></iframe>`
+              : `<img src=${movie_detail.src} class="max-h-[550px] w-[450px] object-cover rounded-sm my-card-detail" />`
+          }
+           
           </div>
 
 

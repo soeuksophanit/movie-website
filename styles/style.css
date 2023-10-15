@@ -45,3 +45,35 @@
     rgba(0, 0, 0, 0.9)
   );
 }
+
+.my-card-detail {
+  transition: 0.3s;
+  animation: scaleAnimation 0.3s ease-in-out;
+}
+
+.animate-rotate {
+  transition: 0.3s;
+  animation: rotatation 0.3s ease-in-out;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.5); /* Initial scale */
+  }
+  100% {
+    transform: scale(1); /* Scale to 1.2 times its original size */
+  }
+}
+
+@keyframes rotatation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0.4;
+    /* Initial scale */
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+    /* Initial scale */
+  }
+}
