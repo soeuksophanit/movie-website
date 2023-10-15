@@ -41,6 +41,7 @@ for (let each_category of all_categories) {
             class="my-card-click duration-300 hover:scale-[1.1] w-full max-w-sm rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
             <a class="relative overlay" href="detail.html?id=${each_movie.id}">
+              <div>
               <img
                 class="p-0 rounded-t-lg"
                 src=${each_movie.src}
@@ -56,6 +57,7 @@ for (let each_category of all_categories) {
                       : each_movie.eps + " Episode"
                   }
                 </span>
+              </div>
               </div>
             </a>
             <div class="px-1 pb-5 bg-[#111319]">
