@@ -95,3 +95,20 @@
 .my-logo-text:hover::after {
   width: 100%;
 }
+
+.my-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 500ms;
+}
+
+.my-detail span {
+  overflow: hidden;
+}
+.q-a-box.active .my-detail {
+  grid-template-rows: 1fr;
+}
+
+.q-a-box.active img {
+  transform: rotate(90deg);
+}

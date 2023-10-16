@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./icons/icon.svg" type="image/x-icon" />
     <!-- flowbite link css  -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
       rel="stylesheet"
     />
     <!-- --------- -->
-    <title>Mini Project</title>
+    <title>The Movies</title>
   </head>
   <body class="bg-[#111319]">
-    <header class="my-navbar sticky top-0 z-[99]"></header>
+    <header class="my-navbar sticky top-0 z-[99] duration-300"></header>
 
     <main>
       <!-- Carousel -->
@@ -217,6 +218,40 @@
       <!-- End Menu 6 -->
     </main>
 
+    <!-- Q and A  -->
+
+    <section
+      class="q-a w-[700px] max-md:w-[80%] mx-auto my-[64px] flex flex-col gap-2"
+    >
+      <div class="q-a-box bg-slate-500 p-3 rounded-sm active">
+        <p class="question cursor-pointer flex items-center justify-between">
+          <span class="font-bold">Is this a real website ?</span>
+          <img class="duration-300" src="./icons/arrow.svg" alt="" />
+        </p>
+        <p class="my-detail">
+          <span class="text-white">
+            No! it just a clone website. I built this because I want to practice
+            my Front-End Skill.
+          </span>
+        </p>
+      </div>
+      <div class="q-a-box bg-slate-500 p-3 rounded-sm">
+        <p class="question cursor-pointer flex items-center justify-between">
+          <span class="font-bold">How can i get this ?</span>
+          <img class="duration-300" src="./icons/arrow.svg" alt="" />
+        </p>
+        <p class="my-detail">
+          <span class="text-white">
+            I took this website from my friend
+            <span class="text-green-500">@Vatany </span>
+            and I just add more addictional function
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- -------- -->
+
     <footer class="my-footer bg-[#111319] dark:bg-gray-900 text-white"></footer>
 
     <!-- script flowbite  -->
@@ -225,6 +260,7 @@
     <!-- our script  -->
     <script src="./js/components/navbar.js" type="module"></script>
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/feature.js" type="module"></script>
     <script src="./js/components/footer.js" type="module"></script>
   </body>
 </html>
