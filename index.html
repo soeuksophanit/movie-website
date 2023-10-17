@@ -150,7 +150,7 @@
       <!-- End of Carousel -->
 
       <!-- Menu 1-->
-      <section class="my-[64px]">
+      <section id="pop" class="my-[64px]">
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">Popular on IQIYI</h2>
         </article>
@@ -161,7 +161,7 @@
       <!-- End Menu 1 -->
 
       <!-- Menu 2-->
-      <section class="my-[64px]">
+      <section id="entertainment" class="my-[64px]">
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">Top Picks for You</h2>
         </article>
@@ -172,7 +172,7 @@
       <!-- End Menu 2 -->
 
       <!-- Menu 3-->
-      <section class="my-[64px]">
+      <section id="c-drama" class="my-[64px]">
         <a name="drama"></a>
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">C-Drama</h2>
@@ -184,7 +184,7 @@
       <!-- End Menu 3 -->
 
       <!-- Menu 4-->
-      <section class="my-[64px]">
+      <section id="k-drama" class="my-[64px]">
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">K-Drama</h2>
         </article>
@@ -195,7 +195,7 @@
       <!-- End Menu 4 -->
 
       <!-- Menu 5-->
-      <section class="my-[64px]">
+      <section id="animation" class="my-[64px]">
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">Animation</h2>
         </article>
@@ -206,7 +206,7 @@
       <!-- End Menu 5 -->
 
       <!-- Menu 6-->
-      <section class="my-[64px]">
+      <section id="var-show" class="my-[64px]">
         <a name="entertain"></a>
         <article class="mx-auto w-4/5">
           <h2 class="text-white text-2xl mx-auto">Variety Show</h2>
@@ -220,48 +220,70 @@
 
     <!-- Q and A  -->
 
-    <section
-      class="q-a w-[700px] max-md:w-[80%] mx-auto my-[64px] flex flex-col gap-2"
-    >
-      <div class="q-a-box bg-slate-500 p-3 rounded-sm active">
-        <p class="question cursor-pointer flex items-center justify-between">
-          <span class="font-bold">Is this a real website ?</span>
-          <img class="duration-300" src="./icons/arrow.svg" alt="" />
-        </p>
-        <p class="my-detail">
-          <span class="text-white">
-            No! it just a clone website. I built this because I want to practice
-            my Front-End Skill.
-          </span>
-        </p>
-      </div>
-      <div class="q-a-box bg-slate-500 p-3 rounded-sm">
-        <p class="question cursor-pointer flex items-center justify-between">
-          <span class="font-bold">How can i get this ?</span>
-          <img class="duration-300" src="./icons/arrow.svg" alt="" />
-        </p>
-        <p class="my-detail">
-          <span class="text-white">
-            I took this website from my friend
-            <span class="text-green-500">@Vatany </span>
-            and I just add more addictional function
-          </span>
-        </p>
-      </div>
-      <div class="q-a-box bg-slate-500 p-3 rounded-sm">
-        <p class="question cursor-pointer flex items-center justify-between">
-          <span class="font-bold">How do I do that huh ?</span>
-          <img class="duration-300" src="./icons/arrow.svg" alt="" />
-        </p>
-        <p class="my-detail">
-          <span class="text-white">
-            Do myself , Researching , Read Document and Ask AI
-          </span>
-        </p>
+    <section class="q-a py-8 mb-[64px]">
+      <div
+        class="w-[700px] max-md:w-[80%] mx-auto my-[64px] flex flex-col gap-2"
+      >
+        <div class="q-a-box bg-[#111319] p-3 rounded-sm active">
+          <p class="question cursor-pointer flex items-center justify-between">
+            <span class="font-bold text-gray-200"
+              >Is this a real website ?</span
+            >
+            <img class="duration-300" src="./icons/arrow.svg" alt="" />
+          </p>
+          <p class="my-detail">
+            <span class="text-blue-300">
+              No! it just a clone website. I built this because I want to
+              practice my Front-End Skill.
+            </span>
+          </p>
+        </div>
+        <div class="q-a-box bg-[#111319] p-3 rounded-sm">
+          <p class="question cursor-pointer flex items-center justify-between">
+            <span class="font-bold text-gray-200">How can i get this ?</span>
+            <img class="duration-300" src="./icons/arrow.svg" alt="" />
+          </p>
+          <p class="my-detail">
+            <span class="text-blue-300">
+              I took this website from my friend
+              <span class="text-green-500">@Vatany </span>
+              and I just add more addictional function
+            </span>
+          </p>
+        </div>
+        <div class="q-a-box bg-[#111319] p-3 rounded-sm">
+          <p class="question cursor-pointer flex items-center justify-between">
+            <span class="font-bold text-gray-200">How do I do that huh ?</span>
+            <img class="duration-300" src="./icons/arrow.svg" alt="" />
+          </p>
+          <p class="my-detail">
+            <span class="text-blue-300">
+              Do myself , Researching , Read Document and Ask AI
+            </span>
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- -------- -->
+
+    <a
+      href="#"
+      class="w-[32px] scroll-to-top flex items-center justify-center h-[32px] rounded-full bg-white p-1 fixed bottom-5 right-4"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        style="fill: black"
+        class="rotate-[-90deg]"
+      >
+        <path
+          d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
+        ></path>
+      </svg>
+    </a>
 
     <footer class="my-footer bg-[#111319] dark:bg-gray-900 text-white"></footer>
 

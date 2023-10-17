@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(
@@ -9,6 +13,39 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+#list-group .link-item a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#list-group .link-item a:hover {
+  color: #fbbf24;
+}
+
+#list-group .link-item a::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0px;
+  bottom: -3px;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#list-group .link-item a:hover::after {
+  width: 100%;
+}
+
+#list-group .link-item a.active {
+  color: #fbbf24;
+}
+
+#list-group .link-item a.active::after {
+  width: 10px;
 }
 
 .my-drop-down {
@@ -104,6 +141,7 @@
 
 .my-detail span {
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 .q-a-box.active .my-detail {
   grid-template-rows: 1fr;
@@ -111,4 +149,27 @@
 
 .q-a-box.active img {
   transform: rotate(90deg);
+}
+
+.q-a-box.active .my-detail span {
+  padding-top: 10px;
+}
+
+.q-a {
+  background-image: url(../imgs/bg-q-a.jpeg);
+  /* background-attachment: fixed; */
+  background-position: bottom;
+}
+
+.scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
